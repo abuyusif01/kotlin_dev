@@ -12,7 +12,7 @@ fun main()
 }
 
 
-class Person(Fname: String = "John" , Lname: String= "Matazu")
+class Person(Fname: String = "John" , Lname: Strking= "Matazu")
 {
 	constructor(Fname: String, Lname: String, age: Int) 
 	: this(Fname, Lname) // because we using the main f and lane

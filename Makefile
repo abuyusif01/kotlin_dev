@@ -1,4 +1,4 @@
-FILENAME=letinit.kt
+FILENAME=interface.kt
 
 build:
 	@kotlinc ${FILENAME} -include-runtime -d output.jar 2</dev/null
