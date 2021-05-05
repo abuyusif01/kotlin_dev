@@ -36,22 +36,18 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="2019"
-            android:paddingRight="60dp"
-            android:paddingLeft="8dp"
-            android:paddingTop="70dp"
             android:textStyle="bold"
+            android:gravity="center"
             android:textColor="@color/zero"
             tools:ignore="NestedWeights,HardcodedText" />
 
         <TextView
             android:id="@+id/tv_two"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="2018"
-
-            android:paddingRight="60dp"
-            android:paddingLeft="40dp"
-            android:paddingTop="70dp"
+            android:gravity="center"
             android:textColor="@color/zero"
             android:textStyle="bold"
             tools:ignore="HardcodedText,Suspicious0dp" />
@@ -70,29 +66,23 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="2019"
-            android:textSize="20sp"
-            android:paddingRight="60dp"
-            android:paddingLeft="8dp"
-            android:paddingTop="70dp"
             android:textStyle="bold"
+            android:gravity="center"
             android:textColor="@color/zero"
             tools:ignore="NestedWeights,HardcodedText" />
 
         <TextView
             android:id="@+id/tv_four"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="2019"
-            android:textSize="15sp"
-            android:paddingRight="60dp"
-            android:paddingLeft="40dp"
-            android:paddingTop="70dp"
+            android:layout_weight="1"
+            android:text="2018"
+            android:gravity="center"
             android:textColor="@color/zero"
             android:textStyle="bold"
             tools:ignore="HardcodedText,Suspicious0dp" />
-
-
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -106,27 +96,23 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="2019"
-            android:textSize="15sp"
-            android:paddingRight="60dp"
-            android:paddingLeft="8dp"
-            android:paddingTop="70dp"
             android:textStyle="bold"
+            android:gravity="center"
             android:textColor="@color/zero"
             tools:ignore="NestedWeights,HardcodedText" />
 
         <TextView
             android:id="@+id/tv_six"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="2020"
-            android:textSize="15sp"
-            android:paddingRight="60dp"
-            android:paddingLeft="40dp"
-            android:paddingTop="70dp"
+            android:layout_weight="1"
+            android:text="2018"
+            android:gravity="center"
             android:textColor="@color/zero"
             android:textStyle="bold"
             tools:ignore="HardcodedText,Suspicious0dp" />
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -153,6 +139,5 @@
             android:text="@string/select_date"
             android:layout_marginEnd="3dp"
             />
-
     </LinearLayout>
 </LinearLayout>

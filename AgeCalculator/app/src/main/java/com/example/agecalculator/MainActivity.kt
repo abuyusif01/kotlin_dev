@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
     {
         val s = "Hello Kotlin"
         val ss = SpannableString(s)
-        ss.setSpan(RelativeSizeSpan(2f),0,5,0)
+//        ss.setSpan(RelativeSizeSpan(2f),0,5,0)
         ss.setSpan(ForegroundColorSpan(Color.RED), 0,5,0)
         findViewById<TextView>(R.id.tv_one).text = ss
 
@@ -62,10 +62,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun calenderPicker(view: View)
     {
-        val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener{view, yearOfDpd, monthOfYear, dayOfMonth
+        val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener
+        {view, yearOfDpd, monthOfYear, dayOfMonth
         ->
-            findViewById<TextView>(R.id.tv_two).text = "$yearOfDpd"
-            findViewById<TextView>(R.id.tv_one).text = "$yearOfDpd"
+            findViewById<TextView>(R.id.tv_two).text = "$dayOfMonth/${monthOfYear+1}/$yearOfDpd"
+
         }, year, month,day)
         dpd.show()
     }
