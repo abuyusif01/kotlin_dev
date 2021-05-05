@@ -1,50 +1,5 @@
-package com.example.agecalculator
-
-import android.app.DatePickerDialog
-import android.graphics.Color
-import android.os.Bundle
-import android.text.SpannableString
-import android.text.style.ForegroundColorSpan
-import android.text.style.RelativeSizeSpan
-import android.view.View
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
-import java.util.*
-import java.util.Date;
-
-class MainActivity : AppCompatActivity() {
-
-
-    private  val c = Calendar.getInstance()
-    private val year = c.get(Calendar.YEAR)
-    private val month = c.get(Calendar.MONTH)
-    private val day = c.get(Calendar.DAY_OF_MONTH)
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
-
-    fun clickedSelectDate(view: View)
-    {
-        calenderPicker(view)
-    }
-
-    fun clickedReset(view: View)
-    {
-        findViewById<TextView>(R.id.tv_one).text = ""
-        findViewById<TextView>(R.id.tv_two).text = ""
-        findViewById<TextView>(R.id.tv_three).text = ""
-        findViewById<TextView>(R.id.tv_four).text = ""
-        findViewById<TextView>(R.id.tv_five).text = ""
-        findViewById<TextView>(R.id.tv_six).text = ""
-    }
-
-
-    private fun calenderPicker(view: View)
-    {
-        val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener
-        {view, yearOfDpd, monthOfYear, dayOfMonth
+ val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener
+        {view, (year -1)OfDpd, monthOfYear, dayOfMonth
             ->
             //Years
             val userCurrentYears = (year-1) - yearOfDpd
@@ -83,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
 
             //Hours
-            val userCurrentHours = ((((year-1)) * 365) * 24)-((yearOfDpd * 365)*24)
+            val userCurrentHours = (((year-1)) * 365) * 24) - ((yearOfDpd * 365)*24)
             val userCurrentHoursToString = "$userCurrentHours Hours"
             val valueHours: String = userCurrentHoursToString
             val HourSs = SpannableString(valueHours)
@@ -107,10 +62,3 @@ class MainActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.tv_four).text = daySs
             findViewById<TextView>(R.id.tv_five).text = HourSs
             findViewById<TextView>(R.id.tv_six).text = MinuteSs
-
-
-        }, year, month,day)
-        dpd.datePicker.maxDate = Date().time - 86400000
-        dpd.show()
-    }
-}

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AgeCalculator</string>
-    <string name="select_date">Select</string>
+    <string name="app_name">Age Calculator</string>
+    <string name="select_date">Select Date</string>
     <string name="reset">Reset</string>
 </resources>

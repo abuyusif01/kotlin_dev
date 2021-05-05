@@ -15,18 +15,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:text="CALCULATE YOUR AGE "
         android:textColor="@color/zero"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:paddingBottom="10dp"
+        android:paddingBottom="5dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="IN MINUTES"
+        android:textColor="@color/zero"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"
         tools:ignore="HardcodedText" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -35,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="2019"
+            android:text=""
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="@color/zero"
@@ -46,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="2018"
+            android:text=""
             android:gravity="center"
             android:textColor="@color/zero"
             android:textStyle="bold"
@@ -65,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="2019"
+            android:text=""
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="@color/zero"
@@ -76,7 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="2018"
+            android:text=""
             android:gravity="center"
             android:textColor="@color/zero"
             android:textStyle="bold"
@@ -95,7 +108,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="2019"
+            android:text=""
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="@color/zero"
@@ -106,7 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="2018"
+            android:text=""
             android:gravity="center"
             android:textColor="@color/zero"
             android:textStyle="bold"
@@ -125,9 +138,9 @@
             android:layout_weight="1"
             android:text="@string/reset"
             android:layout_marginHorizontal="4dp"
-            android:backgroundTint="@color/seven"
+            android:backgroundTint="#bf616a"
             android:onClick="clickedReset"
-            android:textColor="@color/zero"
+            android:textColor="@color/seven"
             />
 
         <Button
@@ -137,6 +150,8 @@
             android:layout_weight="1"
             android:onClick="clickedSelectDate"
             android:text="@string/select_date"
+            android:backgroundTint="@color/eight"
+            android:textColor="@color/seven"
             android:layout_marginEnd="3dp"
             />
     </LinearLayout>
