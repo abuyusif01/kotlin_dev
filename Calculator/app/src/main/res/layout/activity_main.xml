@@ -148,7 +148,7 @@
             android:gravity="left|center_vertical"
             android:paddingStart="45dp"
             android:backgroundTint="@color/lightBlack"
-            android:onClick="onDigit"
+            android:onClick="onClear"
             android:text="Ac" />
         <Button
             android:id="@+id/btnDelete"
@@ -157,7 +157,7 @@
             android:backgroundTint="@color/lightBlack"
             android:layout_weight="1"
             android:stateListAnimator="@null"
-            android:onClick="onDigit"
+            android:onClick="onDelete"
             android:text="⌫" />
 
         <Button
