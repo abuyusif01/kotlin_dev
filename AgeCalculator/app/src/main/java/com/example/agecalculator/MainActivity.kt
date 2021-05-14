@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         {view, yearOfDpd, monthOfYear, dayOfMonth
             ->
             //Years
-            val userCurrentYears = (year-1) - yearOfDpd
+            val userCurrentYears = year - yearOfDpd
             val userCurrentYearsToString = "$userCurrentYears Years"
             val valueYears: String = userCurrentYearsToString
             val yearSs = SpannableString(valueYears)
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
 
 
             //Months
-            val userCurrentMonths = ((year -1) * 12) - (yearOfDpd * 12)
+            val userCurrentMonths = (year * 12) - (yearOfDpd * 12)
             val userCurrentMonthsToString = "$userCurrentMonths Months"
             val valueMonths: String = userCurrentMonthsToString
             val monthSs = SpannableString(valueMonths)
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
 
             // Weeks
-            val userCurrentWeeks = ((year -1)* 52) - (yearOfDpd * 52)
+            val userCurrentWeeks = (year* 52) - (yearOfDpd * 52)
             val userCurrentWeeksToString = "$userCurrentWeeks Weeks"
             val valueWeeks: String = userCurrentWeeksToString
             val weekSs = SpannableString(valueWeeks)
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 
 
             //Days
-            val userCurrentDays = ((year -1)* 365) - (yearOfDpd * 365)
+            val userCurrentDays = (year* 365) - (yearOfDpd * 365)
             val userCurrentDaysToString = "$userCurrentDays Days"
             val valueDays: String = userCurrentDaysToString
             val daySs = SpannableString(valueDays)
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
 
 
             //Hours
-            val userCurrentHours = ((((year-1)) * 365) * 24)-((yearOfDpd * 365)*24)
+            val userCurrentHours = (((year) * 365) * 24)-((yearOfDpd * 365)*24)
             val userCurrentHoursToString = "$userCurrentHours Hours"
             val valueHours: String = userCurrentHoursToString
             val HourSs = SpannableString(valueHours)
@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
 
 
             //Minutes
-            val userCurrentMinutes = ((((year-1) * 365) * 24) * 60) - (((yearOfDpd * 365)*24) * 60)
+            val userCurrentMinutes = (((year * 365) * 24) * 60) - (((yearOfDpd * 365)*24) * 60)
             val userCurrentMinutesToString = "$userCurrentMinutes Minutes"
             val valueMinutes: String = userCurrentMinutesToString
             val MinuteSs = SpannableString(valueMinutes)
